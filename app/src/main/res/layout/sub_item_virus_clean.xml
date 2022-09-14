@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@android:color/darker_gray"
+    android:paddingStart="12dp">
+
+    <View
+        android:id="@+id/v1"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_centerVertical="true" />
+
+    <ImageView
+        android:id="@+id/imgLogoCleanSubRow"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp" />
+
+    <TextView
+        android:id="@+id/tvTitleCleanSubRow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/v1"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="0dp"
+        android:layout_toStartOf="@+id/chkCleanSubRow"
+        android:layout_toEndOf="@id/imgLogoCleanSubRow"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/tvSizeCleanSubRow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/v1"
+        android:layout_marginStart="12dp"
+        android:layout_toEndOf="@id/imgLogoCleanSubRow"
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+
+    <CheckBox
+        android:id="@+id/chkCleanSubRow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:background="@android:color/transparent"
+        app:useMaterialThemeColors="false"
+        tools:ignore="TouchTargetSizeCheck" />
+</RelativeLayout>
